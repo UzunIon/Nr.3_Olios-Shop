@@ -465,7 +465,63 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("Lato-Black.eot");
+  src: url("Lato-Black.eot?#iefix") format("embedded-opentype"), url("Lato-Black.svg#Lato-Black") format("svg"), url("Lato-Black.ttf") format("truetype"), url("Lato-Black.woff") format("woff"), url("Lato-Black.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("Lato-Bold.eot");
+  src: url("Lato-Bold.eot?#iefix") format("embedded-opentype"), url("Lato-Bold.svg#Lato-Bold") format("svg"), url("Lato-Bold.ttf") format("truetype"), url("Lato-Bold.woff") format("woff"), url("Lato-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("Lato-Light.eot");
+  src: url("Lato-Light.eot?#iefix") format("embedded-opentype"), url("Lato-Light.svg#Lato-Light") format("svg"), url("Lato-Light.ttf") format("truetype"), url("Lato-Light.woff") format("woff"), url("Lato-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: url("Lato-LightItalic.eot");
+  src: url("Lato-LightItalic.eot?#iefix") format("embedded-opentype"), url("Lato-LightItalic.svg#Lato-LightItalic") format("svg"), url("Lato-LightItalic.ttf") format("truetype"), url("Lato-LightItalic.woff") format("woff"), url("Lato-LightItalic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("Lato-Regular.eot");
+  src: url("Lato-Regular.eot?#iefix") format("embedded-opentype"), url("Lato-Regular.svg#Lato-Regular") format("svg"), url("Lato-Regular.ttf") format("truetype"), url("Lato-Regular.woff") format("woff"), url("Lato-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Hairline';
+  src: url("Lato-Hairline.svg#Lato-Hairline") format("svg"), url("Lato-Hairline.ttf") format("truetype"), url("Lato-Hairline.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("Lato-Thin.eot");
+  src: url("Lato-Thin.eot?#iefix") format("embedded-opentype"), url("Lato-Thin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
+  font-family: 'Lato', sans-serif;
   position: relative;
 }
 
@@ -488,9 +544,10 @@ body {
 .header .wrapper .nav-bar {
   position: absolute;
   height: 100vh;
-  width: 10%;
   background-color: #fff;
   z-index: 5;
+  -webkit-box-shadow: 7px 0px 11px -6px rgba(145, 145, 145, 0.76);
+          box-shadow: 7px 0px 11px -6px rgba(145, 145, 145, 0.76);
 }
 
 .header .wrapper .nav-bar .nav-bar__list {
@@ -509,6 +566,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
+}
+
+.header .wrapper .nav-bar .nav-bar__list .nav-bar__item {
+  display: inline;
 }
 
 .header .wrapper .nav-bar .nav-bar__list .nav-bar__img {
@@ -532,9 +593,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   text-align: center;
 }
 
@@ -571,15 +629,17 @@ body {
   border-radius: 100%;
   cursor: pointer;
   z-index: 25;
+  -webkit-box-shadow: 0px 3px 16px -4px rgba(138, 138, 138, 0.75);
+          box-shadow: 0px 3px 16px -4px rgba(138, 138, 138, 0.75);
 }
 
 .header .wrapper .nav-burger .nav-burger_btn .nav-burger_icon {
   position: absolute;
   content: "";
   top: 24px;
-  right: 15px;
+  right: 17px;
   height: 2px;
-  width: 20px;
+  width: 15px;
   background-color: #0023ff;
   cursor: pointer;
   -webkit-transition: all 0.2s linear;
@@ -590,10 +650,10 @@ body {
 .header .wrapper .nav-burger .nav-burger_btn .nav-burger_icon:before {
   position: absolute;
   content: "";
-  bottom: 8px;
+  bottom: 6px;
   right: 0;
   height: 2px;
-  width: 20px;
+  width: 15px;
   background-color: #0023ff;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -603,10 +663,10 @@ body {
 .header .wrapper .nav-burger .nav-burger_btn .nav-burger_icon:after {
   position: absolute;
   content: "";
-  top: 8px;
+  top: 6px;
   right: 0;
   height: 2px;
-  width: 20px;
+  width: 15px;
   background-color: #0023ff;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -622,7 +682,7 @@ body {
   position: absolute;
   content: "";
   top: 24px;
-  right: 15px;
+  right: 17px;
   height: 2px;
   width: 0;
   background-color: #0023ff;
@@ -636,7 +696,7 @@ body {
   bottom: 0;
   right: 0;
   height: 2px;
-  width: 20px;
+  width: 15px;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -654,7 +714,7 @@ body {
   top: 0;
   right: 0;
   height: 2px;
-  width: 20px;
+  width: 15px;
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
@@ -710,6 +770,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 12px;
+  font-family: 'Lato-Regular', sans-serif;
   text-transform: uppercase;
   color: #c1c1c1;
   -webkit-transition: all .5s ease-in-out;
@@ -783,15 +844,19 @@ body {
 }
 
 .main-section .main-content .main-content__title {
-  font-size: calc(50px + 50 * ((100vw - 320px) / 960));
+  font-family: 'Lato-Thin', sans-serif;
+  font-size: calc(60px + 60 * ((100vw - 320px) / 960));
   text-transform: uppercase;
+  font-weight: 100;
 }
 
 .main-section .main-content .main-content__subtitle {
-  font-size: calc(20px + 18 * ((100vw - 320px) / 960));
+  font-family: 'Lato-Light', sans-serif;
+  font-weight: 100;
+  font-size: calc(18px + 7 * ((100vw - 320px) / 960));
   text-transform: uppercase;
   text-align: center;
-  margin: 10px 0 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .main-section .main-content .main-content__button {
@@ -800,8 +865,8 @@ body {
   line-height: 1;
   background-color: #0023ff;
   color: #fff;
-  padding: 15px 30px;
-  border-radius: 15px;
+  padding: 18px 40px;
+  border-radius: 35px;
 }
 
 .main-section .main-content .main-content__button:hover {
@@ -864,7 +929,9 @@ body {
           align-items: center;
   background-color: #fff;
   padding: 15px;
-  border-radius: 15px;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
 }
 
 .products .products_wrapper .products__content .products__card picture {
@@ -886,6 +953,7 @@ body {
   color: black;
   margin-bottom: 5px;
   font-size: 16px;
+  font-family: 'Lato-Light', sans-serif;
   text-transform: uppercase;
 }
 
@@ -893,16 +961,26 @@ body {
   color: #c1c1c1;
   margin-bottom: 10px;
   font-size: 13px;
+  font-family: 'Lato-Light', sans-serif;
 }
 
 .products .products_wrapper .products__content .products__card .products__card-text .products__card-price {
   color: #0023ff;
+  font-family: 'Lato-Black', sans-serif;
+}
+
+.products .products_wrapper .products__content .products__card:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 1px 1px 15px -2px #adadad;
+          box-shadow: 1px 1px 15px -2px #adadad;
 }
 
 .products .products_wrapper .products__content .products__card-big {
   justify-self: stretch;
   align-self: stretch;
-  grid-column: 2/-1;
+  grid-column: span 3;
 }
 
 .products .products_wrapper .products__content .products__card-big .products__card-text .products__card-title {
@@ -916,7 +994,7 @@ body {
 .products .products_wrapper .products__content .products__card-medium {
   justify-self: stretch;
   align-self: stretch;
-  grid-column: 2 / -2;
+  grid-column: span 2;
 }
 
 .products .products_wrapper .products__content .products__card-small {
