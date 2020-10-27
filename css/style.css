@@ -747,8 +747,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  width: 240px;
-  padding: 30px;
+  padding: 10%;
   -webkit-transform: translateX(240px);
       -ms-transform: translateX(240px);
           transform: translateX(240px);
@@ -761,7 +760,7 @@ body {
 
 .header .wrapper .nav-burger .nav-burger__menu .nav-burger__item {
   width: 100%;
-  margin: 20px 0 10px 0;
+  margin: 10% 0 8% 0;
 }
 
 .header .wrapper .nav-burger .nav-burger__menu .nav-burger__item .nav-burger__link {
@@ -775,7 +774,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 12px;
+  font-size: calc(8px + 6 * ((100vw - 320px) / 960));
   font-family: 'Lato-Regular', sans-serif;
   text-transform: uppercase;
   color: #bdbdbd;
@@ -784,7 +783,13 @@ body {
   transition: all .5s ease-in-out;
 }
 
-.header .wrapper .nav-burger .nav-burger__menu .nav-burger__item .nav-burger__link .nav-burger__img:hover {
+.header .wrapper .nav-burger .nav-burger__menu .nav-burger__item .nav-burger__link .nav-burger__img {
+  max-width: 42px;
+  height: auto;
+  margin-left: 20%;
+}
+
+.header .wrapper .nav-burger .nav-burger__menu .nav-burger__item .nav-burger__link .nav-burger__img .nav-burger__img:hover {
   fill: #0023ff;
 }
 
@@ -1099,7 +1104,6 @@ body {
 .product .product__leftcol .product__body picture .product__img {
   height: auto;
   width: 100%;
-  max-width: 850px;
 }
 
 .product .product__leftcol .product__footer .wrapper {
@@ -1355,8 +1359,18 @@ body {
 }
 
 @media (min-width: 769px) {
+  .product .product__leftcol {
+    width: 40%;
+  }
+
   .product .product__rightcol .product__body {
     padding-right: 20%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header .wrapper .nav-burger .nav-burger__menu {
+    width: 240px;
   }
 }
 
@@ -1369,12 +1383,23 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .header .wrapper .nav-burger .nav-burger__menu {
+    width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .products .products_wrapper .products__content .products__card-big {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .product .product__leftcol .product__body picture .product__img {
+    max-width: 260px;
+    max-height: 260px;
   }
 
   .product .product__rightcol {
@@ -1412,5 +1437,11 @@ body {
 
   .products .products_wrapper .products__content .products__card-price {
     font-size: calc(12px + 3 * ((100vw - 320px) / 960));
+  }
+}
+
+@media (max-width: 568px) {
+  .header .wrapper .nav-burger .nav-burger__menu {
+    width: 150px;
   }
 }
