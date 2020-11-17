@@ -544,7 +544,6 @@ body {
 .header .wrapper .nav-bar {
   position: fixed;
   height: 100vh;
-  width: 8%;
   background-color: #fff;
   z-index: 8;
   -webkit-box-shadow: 7px 0px 11px -6px #c2c1c2;
@@ -552,7 +551,6 @@ body {
 }
 
 .header .wrapper .nav-bar .nav-bar__list {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -566,7 +564,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30%;
+  height: 100vh;
+  padding: 20%;
 }
 
 .header .wrapper .nav-bar .nav-bar__list .nav-bar__item {
@@ -576,10 +575,7 @@ body {
 .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__logo {
   height: auto;
   width: 100%;
-}
-
-.header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__link {
-  width: 10%;
+  max-width: 45px;
 }
 
 .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__link .nav-bar__img {
@@ -1089,6 +1085,7 @@ body {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 100vh;
   padding: 3.5% 5% 3% 7%;
   -webkit-box-shadow: 3px 3px 10px -4px #c2c1c2;
           box-shadow: 3px 3px 10px -4px #c2c1c2;
@@ -1105,7 +1102,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 5%;
   -webkit-transition: all .8s linear;
   -o-transition: all .8s linear;
   transition: all .8s linear;
@@ -1113,7 +1109,7 @@ body {
 }
 
 .product .product__leftcol .product__header .product__likes-btn .product__likes {
-  font-size: calc(8px + 10 * ((100vw - 320px) / 960));
+  font-size: calc(10px + 10 * ((100vw - 320px) / 960));
   line-height: 1;
   justify-self: center;
   -ms-flex-item-align: center;
@@ -1122,8 +1118,8 @@ body {
 
 .product .product__leftcol .product__header .product__likes-btn .product__likes-img {
   width: 100%;
-  min-width: 10px;
   height: auto;
+  margin-left: 3px;
 }
 
 .product .product__leftcol .product__header .product__likes-btn:hover path {
@@ -1359,8 +1355,7 @@ body {
 .product .product__rightcol .product__body .product__body-orderinfo .product__body-btn {
   background-color: #0023ff;
   color: #fff;
-  margin: 19px 0 10px 0;
-  padding: 2% 6% 2% 6%;
+  padding: 3% 6% 3% 6%;
   border-radius: 35px;
   text-transform: uppercase;
 }
@@ -1425,7 +1420,6 @@ body {
 .product .product__rightcol .product__footer .product__footer-item .products__footer-link .products__footer-img {
   height: auto;
   width: 100%;
-  max-width: 120px;
 }
 
 .product .product__rightcol .product__footer .product__footer-item .products__footer-link .products__footer-text {
@@ -1577,8 +1571,16 @@ body {
 }
 
 @media (min-width: 769px) {
+  .header .wrapper .nav-bar {
+    width: 4%;
+  }
+
   .product .product__leftcol {
     width: 40%;
+  }
+
+  .product .product__leftcol .product__likes-img {
+    max-width: 38px;
   }
 
   .product .product__rightcol .product__body {
@@ -1586,9 +1588,27 @@ body {
   }
 }
 
+@media (min-width: 1024px) {
+  .product .product__rightcol .product__footer .products__footer-img {
+    max-width: 120px;
+  }
+}
+
 @media (min-width: 1025px) {
   .header .wrapper .nav-burger .nav-burger__menu {
     width: 240px;
+  }
+}
+
+@media (min-width: 1367px) {
+  .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__link {
+    max-width: 55px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__link {
+    max-width: 45px;
   }
 }
 
@@ -1607,7 +1627,21 @@ body {
   }
 }
 
+@media (max-width: 1023px) {
+  .product .product__rightcol .product__footer .products__footer-img {
+    max-width: 50px;
+  }
+}
+
 @media (max-width: 768px) {
+  .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__link {
+    max-width: 23px;
+  }
+
+  .header .wrapper .nav-bar {
+    width: 7%;
+  }
+
   .products .products_wrapper .products__content .products__card-big {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1621,15 +1655,19 @@ body {
   }
 
   .product .product__leftcol {
-    padding-left: 16%;
+    padding-left: 10%;
+  }
+
+  .product .product__leftcol .product__likes-img {
+    max-width: 20px;
   }
 
   .product .product__rightcol .product__header {
-    padding-left: 16%;
+    padding-left: 10%;
   }
 
   .product .product__rightcol .product__body {
-    padding-left: 16%;
+    padding-left: 10%;
   }
 
   .product .product__rightcol .product__footer .product__footer-title {
