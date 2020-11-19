@@ -939,7 +939,7 @@ body {
 
 .products .products_wrapper .products__content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(169px, 1fr));
   grid-template-rows: 1fr;
   grid-auto-flow: dense;
   -webkit-box-pack: center;
@@ -1041,6 +1041,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-width: 169px;
 }
 
 .products .products_wrapper .products__content .products__card-small .products__card-img {
@@ -1691,7 +1692,7 @@ body {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .products .products_wrapper .products__content {
     display: -webkit-box;
     display: -ms-flexbox;
