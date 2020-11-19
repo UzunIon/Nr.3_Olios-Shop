@@ -764,6 +764,7 @@ body {
 }
 
 .header .wrapper .nav-burger .nav-burger__menu div {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -775,6 +776,16 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header .wrapper .nav-burger .nav-burger__menu div > .nav-burger__item:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -1%;
+  width: 1px;
+  height: 1px;
+  background-color: #0023ff;
 }
 
 .header .wrapper .nav-burger .nav-burger__menu .nav-burger__item {
