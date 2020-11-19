@@ -565,7 +565,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  padding: 20%;
+  padding: 30% 20% 30% 20%;
 }
 
 .header .wrapper .nav-bar .nav-bar__list .nav-bar__item {
@@ -1342,6 +1342,7 @@ body {
 }
 
 .product .product__rightcol .product__body .product__body-orderinfo .product__body-quantity .inner .body-quantity__quantity {
+  text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
   margin: 10px 0 0 0;
@@ -1383,10 +1384,10 @@ body {
 .product .product__rightcol .product__footer .product__footer-title {
   background-color: #fff;
   color: #bdbdbd;
-  padding: 0 5% 0 5%;
+  padding: 0 3% 0 3%;
   -ms-flex-item-align: center;
       align-self: center;
-  font-size: calc(6px + 10 * ((100vw - 320px) / 960));
+  font-size: calc(6px + 8 * ((100vw - 320px) / 960));
   font-family: 'Lato-Light', sans-serif;
   text-transform: uppercase;
   -webkit-writing-mode: vertical-rl;
@@ -1427,7 +1428,7 @@ body {
 }
 
 .product .product__rightcol .product__footer .product__footer-item .products__footer-link .products__footer-text .products__footer-title {
-  font-size: calc(6px + 8 * ((100vw - 320px) / 960));
+  font-size: calc(6px + 7 * ((100vw - 320px) / 960));
   font-family: 'Lato-Regular', sans-serif;
   margin-bottom: 5px;
   text-transform: uppercase;
@@ -1435,7 +1436,7 @@ body {
 }
 
 .product .product__rightcol .product__footer .product__footer-item .products__footer-link .products__footer-text .products__footer-subtitle {
-  font-size: calc(7px + 7 * ((100vw - 320px) / 960));
+  font-size: calc(7px + 6 * ((100vw - 320px) / 960));
   font-family: 'Lato-Light', sans-serif;
   color: #bdbdbd;
 }
@@ -1572,7 +1573,7 @@ body {
 
 @media (min-width: 769px) {
   .header .wrapper .nav-bar {
-    width: 4%;
+    width: 5%;
   }
 
   .product .product__leftcol {
@@ -1631,6 +1632,10 @@ body {
   .product .product__rightcol .product__footer .products__footer-img {
     max-width: 50px;
   }
+
+  .product .product__rightcol .product__footer .products__footer-subtitle {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1639,7 +1644,7 @@ body {
   }
 
   .header .wrapper .nav-bar {
-    width: 7%;
+    width: 8%;
   }
 
   .products .products_wrapper .products__content .products__card-big {
@@ -1671,7 +1676,7 @@ body {
   }
 
   .product .product__rightcol .product__footer .product__footer-title {
-    padding-left: 16%;
+    padding-left: 5%;
   }
 
   .product .product__rightcol {
