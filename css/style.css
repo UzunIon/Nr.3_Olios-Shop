@@ -523,6 +523,11 @@ template {
 body {
   font-family: 'Lato', sans-serif;
   position: relative;
+  padding: 12px;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-top);
 }
 
 .container {
