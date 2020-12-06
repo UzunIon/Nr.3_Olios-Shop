@@ -1572,7 +1572,7 @@ body {
 
 .search:after {
   position: absolute;
-  background: url("../img/main/main-background.png") 100% 100% no-repeat;
+  background: url("../img/main/main-background.jpg") 100% 100% no-repeat;
   background-size: cover;
   background-position: bottom;
   content: "";
