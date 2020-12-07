@@ -1744,10 +1744,6 @@ body {
 @media (min-width: 769px) {
   .header .wrapper .nav-bar {
     width: 5%;
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
   }
 
   .header .wrapper .nav-bar .nav-bar__logo {
@@ -1842,10 +1838,6 @@ body {
   }
 
   .header .wrapper .nav-burger .nav-burger__menu {
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
     height: 93vh;
   }
 
@@ -1911,10 +1903,6 @@ body {
 @media (max-width: 568px) {
   .header .wrapper .nav-burger .nav-burger__menu {
     width: 150px;
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
   }
 
   .header .wrapper .nav-burger .nav-burger__menu .nav-burger__item {
@@ -1931,10 +1919,6 @@ body {
     width: 100%;
     height: 7vh;
     bottom: 0;
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
   }
 
   .header .wrapper .nav-bar .nav-bar__list {
@@ -1991,5 +1975,28 @@ body {
 @media (min-width: 708px) and (max-width: 960px) {
   .product .product__rightcol .product__footer {
     padding-left: 10%;
+  }
+}
+
+@media (max-device-width: 375px) and (max-device-height: 812px) {
+  .header .wrapper .nav-bar {
+    padding: 12px;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .header .wrapper .nav-bar {
+    padding: 12px;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .header .wrapper .nav-burger .nav-burger__menu {
+    padding: 12px;
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-top: env(safe-area-inset-top);
   }
 }
