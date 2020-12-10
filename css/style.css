@@ -1980,23 +1980,15 @@ body {
 
 @media (max-device-width: 375px) and (max-device-height: 812px) {
   .header .wrapper .nav-bar {
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
+    height: 10vh;
+    padding: 7px 10px 20px 10px;
   }
 
-  .header .wrapper .nav-bar {
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
+  .header .wrapper .nav-bar .nav-bar__list {
+    padding: 0 3% 3% 3%;
   }
 
   .header .wrapper .nav-burger .nav-burger__menu {
-    padding: 12px;
-    padding-bottom: env(safe-area-inset-bottom);
-    padding-left: env(safe-area-inset-left);
-    padding-top: env(safe-area-inset-top);
+    padding: 60px 20px 60px 20px;
   }
 }
