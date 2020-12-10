@@ -1151,7 +1151,7 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   height: 100vh;
-  padding: 3.5% 5% 3% 7%;
+  padding: 3.5% 5% 3% 9%;
   -webkit-box-shadow: 3px 3px 10px -4px #c2c1c2;
           box-shadow: 3px 3px 10px -4px #c2c1c2;
 }
