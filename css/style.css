@@ -1978,7 +1978,7 @@ body {
   }
 }
 
-@media (width: 812px) and (height: 375px) {
+@media (max-device-width: 812px) and (max-device-height: 375px) {
   .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__link {
     max-width: 25px;
   }
@@ -2025,7 +2025,7 @@ body {
   }
 }
 
-@media (width: 375px) and (height: 812px) {
+@media (max-device-width: 375px) and (max-device-height: 812px) {
   .header .wrapper .nav-bar {
     height: 10vh;
     padding: 7px 10px 20px 10px;
