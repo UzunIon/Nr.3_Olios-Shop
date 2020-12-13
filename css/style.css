@@ -753,7 +753,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100vh;
   padding: 36% 10% 10% 10%;
   background-color: #fff;
   -webkit-transition: all 0.2s linear;
@@ -774,7 +773,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 6px;
+  margin-top: 20%;
 }
 
 .header .wrapper .nav-burger .nav-burger__menu div > .nav-burger__item:after {
@@ -1841,7 +1840,11 @@ body {
   }
 
   .header .wrapper .nav-burger .nav-burger__menu {
-    height: 93vh;
+    height: 100%;
+  }
+
+  .header .wrapper .nav-burger .nav-burger__menu div {
+    margin-top: 20%;
   }
 
   .products .products_wrapper .products__content .products__card-big {
@@ -1931,9 +1934,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .header .wrapper .nav-bar .nav-bar__list .nav-bar__logo {
@@ -1950,6 +1950,7 @@ body {
             justify-content: space-evenly;
     -ms-flex-line-pack: center;
         align-content: center;
+    width: 100%;
   }
 
   .header .wrapper .nav-bar .nav-bar__list .nav-bar__item:nth-child(2) .nav-bar__link {
@@ -1998,7 +1999,7 @@ body {
   }
 
   .header .wrapper .nav-burger .nav-burger__menu {
-    padding: 60px 20px 60px 20px;
+    padding: 60px 20px 20px 20px;
   }
 
   .header .wrapper .nav-burger .nav-burger__menu .nav-burger__img {
