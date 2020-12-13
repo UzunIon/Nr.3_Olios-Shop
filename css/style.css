@@ -1866,13 +1866,12 @@ body {
   }
 
   .product .product__leftcol .product__body picture .product__img {
-    max-width: 270px;
-    max-height: 270px;
+    max-width: 240px;
+    max-height: 250px;
   }
 
   .product .product__leftcol {
     padding-left: 10%;
-    height: 65%;
   }
 
   .product .product__leftcol .product__likes-img {
@@ -1882,14 +1881,6 @@ body {
 
   .product .product__rightcol {
     max-width: 100%;
-    height: 55%;
-  }
-
-  .product {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -1919,6 +1910,15 @@ body {
   }
 }
 
+@media (max-width: 630px) {
+  .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 568px) {
   .header .wrapper .nav-burger .nav-burger__menu {
     width: 150px;
@@ -1936,7 +1936,7 @@ body {
 @media (max-width: 567px) {
   .header .wrapper .nav-bar {
     width: 100%;
-    height: 7vh;
+    height: 8%;
     bottom: 0;
   }
 
