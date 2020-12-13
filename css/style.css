@@ -1872,6 +1872,7 @@ body {
 
   .product .product__leftcol {
     padding-left: 10%;
+    height: 65%;
   }
 
   .product .product__leftcol .product__likes-img {
@@ -1881,6 +1882,7 @@ body {
 
   .product .product__rightcol {
     max-width: 100%;
+    height: 55%;
   }
 
   .product {
@@ -1969,11 +1971,16 @@ body {
   }
 
   .product .product__leftcol {
+    height: 45%;
     padding-left: 5%;
   }
 
   .product .product__rightcol .product__footer {
-    padding-bottom: 10vh;
+    padding-bottom: 15%;
+  }
+
+  .product .product__rightcol {
+    height: 55%;
   }
 }
 
