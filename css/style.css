@@ -1852,6 +1852,12 @@ body {
   }
 }
 
+@media (max-width: 812px) {
+  .product .product__rightcol .product__body {
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .header .wrapper .nav-bar .nav-bar__list .nav-bar__item .nav-bar__logo {
     max-width: 26px;
@@ -1983,7 +1989,7 @@ body {
   }
 
   .product .product__rightcol .product__footer {
-    padding-bottom: 15%;
+    padding-bottom: 17%;
   }
 
   .product .product__rightcol {
